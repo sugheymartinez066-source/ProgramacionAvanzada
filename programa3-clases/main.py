@@ -1,0 +1,70 @@
+from inventario import *
+
+prod1 = Producto("Maruchan", 25, 100)
+prod1.aplicar_descuento(0.3)
+prod1.actualizar_stock(20)
+prod1.actualizar_stock(-60)
+prod1.actualizar_stock(-40)
+
+
+prod1  = Producto("Coca Cola 600ml", 18, 50)
+prod2  = Producto("Papas Sabritas Original", 22, 40)
+prod3  = Producto("Doritos Nacho", 24, 35)
+prod4  = Producto("Gansito", 15, 60)
+prod5  = Producto("Chocorroles", 18, 45)
+prod6  = Producto("Ruffles Queso", 26, 30)
+prod7  = Producto("Cheetos Flamin Hot", 23, 55)
+prod8  = Producto("Takis Fuego", 25, 50)
+prod9  = Producto("Pingüinos", 16, 48)
+prod10 = Producto("Submarinos", 17, 42)
+prod11 = Producto("Chocolate Carlos V", 14, 70)
+prod12 = Producto("Snickers", 20, 38)
+prod13 = Producto("M&M's Chocolate", 19, 44)
+prod14 = Producto("Galletas Emperador", 18, 52)
+prod15 = Producto("Gomitas Panditas", 21, 65)
+prod16 = Producto("Paleta Payaso", 12, 80)
+prod17 = Producto("Mazapán", 10, 90)
+prod18 = Producto("Chips Ahoy", 28, 33)
+prod19 = Producto("Refresco Sprite 600ml", 18, 46)
+prod20 = Producto("Refresco Fanta 600ml", 18, 41)
+prod21 = Producto("Hot Dogs Jumbo", 30, 25)
+prod22 = Producto("Hamburguesa Congelada", 35, 20)
+prod23 = Producto("Pizza Individual", 40, 15)
+prod24 = Producto("Papas a la Francesa", 27, 34)
+prod25 = Producto("Nachos con Queso", 22, 37)
+
+listaproductos=[]
+listaproductos.append(prod1)
+listaproductos.append(prod2)
+listaproductos.append(prod3)
+listaproductos.append(prod4)
+listaproductos.append(prod5)
+listaproductos.append(prod6)
+listaproductos.append(prod7)
+listaproductos.append(prod8)
+listaproductos.append(prod9)
+listaproductos.append(prod10)
+listaproductos.append(prod11)
+listaproductos.append(prod12)
+listaproductos.append(prod13)
+
+pedido1=Pedido("Sughey")
+pedido1.agregar_producto(prod10)
+pedido1.agregar_producto(prod8)
+pedido1.agregar_producto(prod6)
+print(pedido1.lista_comprados)
+pedido1.calcula_total()
+pedido1.finalizar_pedido(listaproductos)
+
+
+cat1 = Categoria("Chatarra")
+cat1.agregar_producto(prod1)
+cat1.agregar_producto(prod2)
+cat1.agregar_producto(prod3)
+cat1.agregar_producto(prod4)
+cat1.agregar_producto(prod5)
+   
+cat1.valor_total_categoria()
+
+
+

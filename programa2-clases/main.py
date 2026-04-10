@@ -1,0 +1,25 @@
+from humanidades import *
+
+humano1=Humano ("Diana",17,"Femenino")
+print(humano1.nombre)
+print(humano1.edad)
+print(humano1.genero)
+humano1.caract()
+humano1.saludo()
+
+programador1=Programador ("Gilberto", 20, "Masculino")
+print (programador1.nombre)
+print(programador1.edad)
+print(programador1.genero)
+programador1.caract() 
+programador1.saludo() 
+programador1.saludo2()
+
+ing1=Ingeniero("Brian",23, "Masculino", "Ciencia de Datos") 
+print (ing1.nombre)
+print(ing1.edad)
+print(ing1.genero)
+print(ing1.tipo)
+ing1.saludo() 
+ing1.caract()
+ing1.saludo2()
